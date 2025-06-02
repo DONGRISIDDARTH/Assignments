@@ -1,3 +1,12 @@
 This is basic backtracking problem for the nqueens.
 
-if 
+i am placing an queen on the row of the column checking it is safe or not:
+safe can be defined by the 
+  1.queen should not be present is same row.
+  2.queen should not be present is same column.
+  3.queen should not be present is diagnals. (in the code i have check for the left side diagnals only)
+
+  in this cases it is considered as the safe state and at the end of the each safe state i am storing in the vector for all possibles.
+  if the that is not safe state i am backtracking and placing to next place which is safe state.
+
+if you check this code it is easy to understandable.
