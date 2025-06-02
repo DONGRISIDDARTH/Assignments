@@ -6,14 +6,12 @@ class Solution {
     bool isSafe1(int row, int col, vector < string > board, int n) {
       int duprow = row;
       int dupcol = col;
-
       while (row >= 0 && col >= 0) {
         if (board[row][col] == 'Q')
           return false;
         row--;
         col--;
       }
-
       col = dupcol;
       row = duprow;
       while (col >= 0) {
@@ -21,7 +19,6 @@ class Solution {
           return false;
         col--;
       }
-
       row = duprow;
       col = dupcol;
       while (row < n && col >= 0) {
@@ -32,7 +29,6 @@ class Solution {
       }
       return true;
     }
-
   public:
     void solve(int col, vector < string > & board, vector < vector < string >> & ans, int n) {
       if (col == n) {
