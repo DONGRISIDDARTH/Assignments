@@ -2,4 +2,4 @@ This is simple Graph problme for the cycle detection.
 in this i have added a variable no of edges parameters to know that how many edges are there.
 and another variable is no of vertices are presesnt in there.
 
-i have a vector of visited and another one for the path
+i have a vector of visited and another vector is recstack which is used for the tracking of vertices along the path.
